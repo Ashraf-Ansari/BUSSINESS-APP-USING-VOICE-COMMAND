@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Registration</title>
+<!-- <script type="text/javascript" src="{{ url_for('static', filename = 'js/validateForm.js') }}">-->
+</script>
+</head>
+<body>
+    
+
+    <form action="/email" method="POST">
+    <p>UserId: <input type="email" value="{{email}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px" height="15px"></button></p>
+    </form>
+    <form action="/password" method="POST">
+    <P>Password: <input type="password" name="password" value="{{password}}"><input type="submit" name="click" value="click"></p>
+
+    </form>
+    <form action="/fullname" method="POST">
+
+    <p>First Name: <input type="text" name="firstName" value="{{fullname}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px"></button></p>
+    </form>
+    <form action="/address1" method="POST">
+    <p>Address Line 1: <input type="text" name="address1" value="{{address1}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px"></button></p>
+    </form>
+    <form action="/address2" method="POST">
+    <p>Address Line 2: <input type="text" name="address2" value="{{address2}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px"></button></p>
+    </form>
+    <form action="/zipcode" method="POST">
+    <p>Zipcode: <input type="text" name="zipcode" value="{{zipcode}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px"></button></p>
+    </form>
+    <form action="/city" method="POST">
+    <p>City: <input type="text" name="city" value="{{city}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px"></button></p>
+    </form>
+    <form action="/state" method="POST">
+    <p>State: <input type="text" name="state" value="{{state}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px"></button></p>
+    </form>
+    <form action="/country" method="POST">
+    <p>Country: <input type="text" name="country" value="{{country}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px"></button></p>
+    </form>
+    <form action="/contact" method="POST">
+    <p>Phone Number: <input type="text" name="phone" value="{{contact}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px"></button></p>
+    </form>
+    <form action="/register" method="POST">
+    <input type="submit" name="">
+    </form>
+    <center>
+    <form action="/target" method="post">
+    <label>1.To see more Samsung product say ,show me some more Samsung mobile and same for Vivo and Redmi</label><br>
+    <label>2.To see Create an order say,create a order for me </label><br>
+    <label>3.To see of any mobile specification say,'mobile name' specification</label><br>
+    <label>Click here</label><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="25px" height="25px"></button>
+    </form></center><br>
+
+</body>
+</html>
+
+
+

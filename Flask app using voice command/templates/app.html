@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>enter product details your product</title>
+      <h3>Product Order Form</h3>
+</head>
+<body>
+     
+     <label>Product Name: </label>
+      <form action="/productname" method="post">
+     <input type="text" value="{{productname}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px" height="15px"></button></form>
+     <label>Price: </label>            
+     <input type="text" value="{{price}}"><br>
+     <label>Quantity: </label>
+      <form action="/quantity" method="post">
+     <input type="text" value="{{quantity}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px" height="15px"></button></form>
+     <label>Order Date: </label><br>
+     <input type="text" value="{{date}}"><br>
+     <label>Color: </label>
+      <form action="/color" method="post">
+     <input type="text" value="{{color}}"><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px" height="15px"></button></form>
+     <label>Submission Click Here: </label>
+      <form action="/final" method="post"><br>
+     <button>submit</button></form>
+       <center>  <form action="/target" method="post">
+     <label>Click here</label><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="15px"></button>
+    </form></center>
+    <p>"redmi note 7","samsung galaxy a71","vivo s1","redmi note 4","samsung galaxy a60","vivo y12",
+   "redmi note 8","samsung galaxy s10","vivo v17","redmi note 6 pro","samsung galaxy a70","vivo s5",
+   "redmi note 5 pro","samsung galaxy a30",vivo y3","redmi 8","samsung galaxy a7","vivo z5"</p>
+</body>
+</html>

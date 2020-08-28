@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>	First flask app </title>
+</head>
+<body>
+<p> {{error}} </p>
+<form action="/login" method="POST">
+	<p>UserId: <input type="text" name="email"></p>
+	<p>Password: <input type="password" name="password"></p>
+	<p><input type="submit"></p>
+	<p>To create an order you have to sign in.</p>
+	<p>If you have not signup please first signup.For register speak 'Register' or 'signup'.</p>
+	
+</form>
+<center>
+	<form action="/target" method="post">
+    <label>1.To see more Samsung product say ,show me some more Samsung mobile and same for Vivo and Redmi.</label><br>
+    <label>2.To see Create an order say,create a order for me. </label><br>
+    <label>3.To see of any mobile specification say,'mobile name' specification.</label><br>
+    <label>ex. redmi note 8 specification.</label><br>
+    <label>To register new account  say 'sign up'.</label><br>
+    <label>To login new account  say 'sign in' or 'login'.</label><br>
+    <label>Return to home page say 'homepage'. </label><br>
+    <label>Click here</label><button><img src="{{ url_for('static', filename='res/voice.png') }}"  width="25px" height="25px"></button>
+    </form></center><br>
+</body>
+</html>
